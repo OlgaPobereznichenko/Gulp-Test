@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test Exercise Olga Pobereznichenko</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Tenor+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <div class="menu-container">
+      <!-- logo -->
+      <div class="logo-container">
+        <a href="#">
+          <i class="fa-solid fa-chart-simple logo"></i>
+        </a>
+        <a href="#" class="text-logo">
+          <h1>Employee time</h1>
+          <h2>reporting</h2><span>v 3.0.0</span>
+        </a>
+      </div>
+      <!--end of logo-->
+      <!-- popup-content -->
+      <button class="menu" id="menu">
+        <span class="button-content" tabindex="-1">
+          <span class="text">Menu</span>
+          <span class="bar"></span>
+        </span>
+      </button>
+      <!-- end popup-content -->
+      <nav id="main-navigation">
+        <ul>
+          <li class="link-hover nav-link">
+            <i class="fa-solid fa-chart-simple"></i>
+            <a href="#" class="link active">Summary</a>
+          </li>
+          <li class="link-hover nav-link">
+            <a href="#" class="link">Hours</a>
+          </li>
+          <li class="link-hover nav-link">
+            <a href="#" class="link">Projects</a>
+          </li>
+          <li class="link-hover nav-link">
+            <a href="contact.php" class="link">Reports</a>
+          </li>
+          <li class="link-hover nav-link">
+            <a href="contact.php" class="link">Confirmation</a>
+          </li>
+          <li class="link-hover nav-link">
+            <a href="contact.php" class="link">Mailer</a>
+          </li>
+          <li class="link-hover nav-link">
+            <a href="contact.php" class="link">Compare</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <img src="img/round-photo.png" class="user-photo" alt="user photo">
+      </div>
+    </div>
+  </header>
+  <main class="wrapper">
+    <div class="filter-buttons">
+      <form action="./" method="post" name="intro" class="form-intro" id="form-intro">
+        <div class="developer">
+          <label for="developer">Dev:</label>
+          <select name="developer" id="developer" class="input">
+              <option value="FrontEndDeveloper">Jenny Wilson</option>
+              <option value="FrontEndDeveloper">John Smith</option>
+              <option value="FrontEndDeveloper">John Smith</option>  
+          </select>
+          <br>
+        </div>
+          <div class="jobrole">
+            <label for="jobs">Status:</label>
+            <select name="jobs" id="jobs" class="input">
+              <optgroup label="Web">
+                <option value="FrontEndDeveloper">All Statuses</option>
+                <option value="PHPDeveloper">PHP Developer</option>
+                <option value="PythonDeveloper">Python Developer</option>
+                <option value="RailsDeveloper">Rails Developer</option>
+                <option value="WebDesigner">Web Designer</option>
+                <option value="WordPressDeveloper">WordPress Developer</option>
+              </optgroup>
+              <optgroup label="Mobile">
+                <option value="AndroidDeveloper"> Android Developer</option>
+                <option value="iOSDeveloper">iOS Developer</option>
+                <option value="MobileDesigner">Mobile Designer</option>
+              </optgroup>
+              <optgroup label="Business">
+                <option value="Business Owner">Business Owner</option>
+                <option value="Freelancer">Freelancer</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="Other">Other</option>
+                <option value="Secretary">Secretary</option>
+                <option value="Maintenance">Maintenance</option>
+              </optgroup>
+            </select>
+            <br>
+          </div>
+
+          <div class="efficiency">
+            <input type="checkbox" name="efficiency" value="web" id="development"> <label for="development">Show efficiency</label><br>
+          </div>
+          <input type="submit" value="Apply" class="sign_up_button active-sign">
+          <input type="reset" value="Reset filters" class="sign_up_button">
+        </div>
+      </form>
+    </div>
+    <div class="all-tabs">
+      <div class="project-tabs">
+        <div class="project-info-tab">
+          <table>
+            <tr>
+              <th colspan="2">Project Information</th>
+            </tr>
+            <tr>
+              <td>Project name </td>
+              <td>Scirnce $Information Platform</td>
+            </tr>
+            <tr>
+              <td>Team lead</td>
+              <td>Ralph Edvard</td>
+            </tr>
+            <tr>
+              <td>Created</td>
+              <td><time datetime="2019-06-25">25/06/2019</time></td>
+            </tr>
+            <tr>
+              <td>Finished</td>
+              <td><time datetime="2019-06-30">30/06/2019</time></td>
+            </tr>
+            <tr>
+              <td>Categories</td>
+              <td>CMS Production</td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td class="dollar">$</td>
+            </tr>
+            <tr>
+              <td>Label</td>
+              <td><span class="label">Hourly</span></td>
+            </tr>
+            <tr>
+              <td>Tag</td>
+              <td class="tag">Page Mockup</td>
+            </tr>
+            <tr>
+              <td>Status</td>
+              <td class="status-error">Non Completed</td>
+            </tr>
+            <tr>
+              <td>Team</td>
+              <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eos cum harum esse! Officiis est laborum, harum in maxime ad!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eos cum harum esse! Officiis est laborum, harum in maxime ad!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto eos cum harum esse! Officiis est laborum, harum in maxime ad!</td>
+            </tr>
+          </table>
+        </div>
+        <div class="project-time-tab">
+
+            <h6>Project Time</h6>
+            <div class="main-content">
+              <div> 
+                <table class="column1">
+                <tr>
+                  <td class="sub-header">Total time(Hours)</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Total time(Hours)</td>
+                  <td>Scirnce $Information Platform</td>
+                </tr>
+                <tr>
+                  <td>Changes</td>
+                  <td>2067.26h</td>
+                </tr>
+                <tr>
+                  <td>Origin</td>
+                  <td>1660.55h</td>
+                </tr>
+                <tr>
+                  <td>Programming</td>
+                  <td>2345.56h</td>
+                </tr>
+                <tr>
+                  <td>Markup</td>
+                  <td>27.18h</td>
+                </tr>
+                <tr>
+                  <td>Graphic Design</td>
+                  <td>34h</td>
+                </tr>
+                <tr>
+                  <td>Estimation</td>
+                  <td>678h</td>
+                </tr>
+                <tr>
+                  <td>Investigation</td>
+                  <td>80.83h</td>
+                </tr>
+                <tr>
+                  <td>Bug Fixing</td>
+                  <td>76h</td>
+                </tr>
+                <tr>
+                  <td>Quality Assurance</td>
+                  <td>6h</td>
+                </tr>
+                <tr>
+                  <td>Meetings</td>
+                  <td>5h</td>
+                </tr>
+                <tr>
+                  <td>Other</td>
+                  <td>8256.08h</td>
+                </tr>
+                <tr>
+                  <td>Sum</td>
+                  <td>15236.48h</td>
+                </tr>
+
+              </table>
+            </div>
+            <div>             
+               <table class="column2">
+                <table> 
+                  <tr >
+                    <td class="sub-header" colspan=2>Time(Hours) by the Current Months(Sep)</td>
+                  </tr>
+                  <tr>
+                    <td>Changes</td>
+                    <td>0h</td>
+                  </tr>
+                  <tr>
+                    <td>Origin</td>
+                    <td>2067.26h</td>
+                  </tr>
+                  <tr>
+                    <td>Programming</td>
+                    <td>1660.55h</td>
+                  </tr>
+                  <tr>
+                    <td>Sum</td>
+                    <td>15236.48h</td>
+                  </tr>
+                </table>
+                <table>
+                  <tr >
+                    <td class="sub-header">Estimation(Hours)</td>
+                  </tr>
+                  <tr>
+                    <td>Changes</td>
+                    <td>0h</td>
+                  </tr>
+                  <tr>
+                    <td>Origin</td>
+                    <td>2067.26h</td>
+                  </tr>
+                  <tr>
+                    <td>Sum</td>
+                    <td>15236.48h</td>
+                  </tr>
+                </table>
+              </table>
+            </div>
+          </div>
+      </div>
+     
+    </div> 
+    <div class="efficiency-tab">
+      <h6>Efficiency</h6>
+      <div class="main-content">
+        <div> 
+          <table class="column1">
+          <tr class="sub-header">
+            <td>Total Efficiency</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Changes</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Origin</td>
+            <td>2345.04 h</td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>2345.04 h</td>
+            <td>100%</td>
+          </tr>
+        </table>
+      </div>
+      <div>             
+         <table class="column2">
+            <tr class="sub-header">
+              <td>Efficiency by Current Month(Sep)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Changes</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Origin</td>
+              <td>507.26h</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>Average</td>
+              <td>507.26h</td>
+              <td>100%</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+    </div>
+    <div class="filter-table">
+      <table>
+        <tr class="filter-title">
+          <th>Task name <i class="fa-solid fa-arrow-down-arrow-up"></i></th>
+          <th>Developer <i class="fa-solid fa-arrow-down-arrow-up"></i></th>
+          <th>Work Type <i class="fa-solid fa-arrow-down-arrow-up"></i></th>
+          <th>Status <i class="fa-solid fa-arrow-down-arrow-up"></i></th>
+          <th>Estimation(h) <i class="fa-solid fa-arrow-down-arrow-up"></i></th>
+          <th>Total time spent by All <i class="fa-solid fa-arrow-down-arrow-up"></i></th>
+          <th>My time spent by Period <i class="fa-solid fa-arrow-down-arrow-up"></i></th>
+          <th>Efficiency<i class="fa-solid fa-arrow-down-arrow-up"></i></th>
+        </tr>
+        <tr>
+          <td>Search page mockup</td>
+          <td>Robert Fox,Kent Peacock...<span>Show more(6)</span></td>
+          <td>Programming, Meetings...<span>Show more(6)</span></td>
+          <td class="status-success">Completed</td>
+          <td>0.0</td>
+          <td>232.17</td>
+          <td>23.00</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Two levels of the menu mockup</td>
+          <td>Robert Fox<span>Show more(6)</span></td>
+          <td>Graphic Design</span></td>
+          <td class="status-error">Non Completed</td>
+          <td>0.0</td>
+          <td>1567.60</td>
+          <td>15.00</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Sum</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>2078h</td>
+          <td>1090h</td>
+          <td>100%(1090h)</td>
+        </tr>
+      </table>
+    </div>
+    <div class="page-filter-buttons">
+      <form action="" method="post" name="intro" class="form-intro" id="form-intro">
+          <div class="rowscount">
+            <label for="rowscount">Rows per page</label>
+            <select name="rowscount" id="rowscount" class="input">
+                <option value="rowscount">10</option>
+                <option value="rowscount">9</option>
+                <option value="rowscount">9</option>  
+            </select>
+          </div>
+         </form>
+         <!-- <div class="page-number"> -->
+          <p class="page-number">1-10 of 20</p>
+          <a href="#" class="previous">&laquo; <span>1</span> 2 &raquo;</a>
+        <!-- </div> -->
+  </main>
+  <footer>2012-2020 CMS Department of <span>NIX Solutions Ltd.</span></footer>
+  <script src="/dist/script.js"></script>
+</body>
+</html>

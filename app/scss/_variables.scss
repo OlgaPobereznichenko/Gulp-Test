@@ -1,0 +1,32 @@
+//Colors
+$white-text:#ffffffff;
+$lavender-text: #7676d3;
+$violette-text: #8076df;
+$grey-text: #292146;
+$background-color: #26364e;
+$label-color: #6861bd;
+$error-text:#d46959;
+$success-text: #478a59;
+$active-button-background: #8d80f7;
+$black: black;
+$tab-border-color: rgb(177, 177, 177);
+$tab-background-color: rgba(177, 177, 177, 0.144);
+
+//Fonts
+$opensans: 'Open Sans', sans-serif;
+
+
+// Function to
+// Convert Px to Ems
+@function em($px, $bc: 16){
+    @return #{$px/$bc}em; 
+}
+
+// Media Query Breakpoints
+$desktopMedium: em(1240);
+$tabletLandscape: em(1024);
+$phonePixel:em(690);
+$phoneLandscape: em(640);
+$phoneIphone: em(420);
+$iphone6:em(375);
+$phoneMinimal: em(320);

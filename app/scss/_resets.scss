@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* Resets */
+html {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/* Image reset */
+img {
+    max-width: 100%;
+    height: auto;
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body {
+    padding: 0;
+    margin: 0 ;
+    background-color:$background-color;
+}
+body {
+    font-family: $opensans;
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+html {
+    background-color: $violette-text;
+}

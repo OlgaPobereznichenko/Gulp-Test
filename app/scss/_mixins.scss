@@ -1,0 +1,5 @@
+@mixin tab-styles {
+    background-color: $tab-background-color;
+    border-radius: 7%;
+    border: 1px solid $tab-border-color;
+}

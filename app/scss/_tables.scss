@@ -1,0 +1,151 @@
+.all-tabs {
+    color: $white-text;
+    font-size: 12px;
+    margin: 0 30px;
+    .project-tabs {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+        .project-info-tab {
+            padding:20px;
+            // @include tab-styles;
+            background-color: $tab-background-color;
+            border-radius: 1%;
+            border: 1px solid $tab-border-color;
+            th {
+                color: $white-text;
+                text-align: center;
+                font-size: 14px;
+            }
+            tr {
+                td {
+                    padding-right: 40px;
+                    padding-top: 10px;
+                }
+                td:nth-child(1) {
+                    color: $violette-text;
+                }
+                .dollar {
+                    color: $success-text;
+                }
+                .label {
+                    background-color: $violette-text;
+                    padding:4px;
+                }
+            }
+        }
+        .project-time-tab {
+            padding:20px;     
+            margin-left: 25px;
+            // @include tab-styles;
+            background-color: $tab-background-color;
+            border-radius: 1%;
+            border: 1px solid $tab-border-color;
+            h6 {
+                text-align: center;
+                font-size: 15px;
+                margin:0;
+                padding:0;
+                margin-bottom: 10px;
+            }
+            .main-content {
+                display:flex;
+                justify-content: space-around;
+                .table {
+                    border-collapse: collapse;
+                }
+                tr {
+                    border: 1px solid grey;
+                    td {
+                        padding-right: 40px;
+                        padding-top: 10px;
+                    
+                    }
+                }
+            
+            }
+        }    
+
+    }
+
+}
+.efficiency-tab {
+    background-color: $tab-background-color;
+    border-radius: 1%;
+    border: 1px solid $tab-border-color;
+    margin-top: 20px;
+    h6 {
+        text-align: center;
+        font-size: 15px;
+        margin:0;
+        padding:0;
+        margin-bottom: 10px; 
+        margin-top: 15px;
+    }
+    .main-content {
+        display:flex;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        div {
+            flex: 1;
+
+        }
+        td {
+            padding-right: 40px;
+            padding-top: 10px;
+        }
+
+    }
+}
+.filter-table {
+    background-color: $tab-background-color;
+    border-radius: 1%;
+    border: 1px solid $tab-border-color;
+    margin-top: 20px;
+    padding:20px;
+    .filter-title {
+        padding: 10px 20px;
+    }
+    td {
+        padding: 0;
+        padding-right: 40px;
+        padding-top: 10px;
+    }
+
+    tr:nth-child(odd){
+        background-color: $tab-background-color;
+    }
+
+}
+.page-filter-buttons {
+    display: flex;
+    .page-number {
+        display: flex;
+        a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 2px 7px;
+          }
+          
+          a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .previous {
+            background-color: #f1f1f1;
+            color: black;
+          }
+    }
+}
+
+.status-error {
+    color: $error-text;
+}
+.status-success {
+    color: $success-text;
+}
+.sub-header {
+    color: $lavender-text;
+}

@@ -1,0 +1,64 @@
+.filter-buttons { 
+    margin-left: 10px; 
+    .form-intro {
+        display: flex;
+        justify-content: flex-start;
+        .developer,
+        .jobrole {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+            font-size: 12px;
+            
+            label {
+                margin: 10px 0;
+                color: $lavender-text;
+            }
+        }
+        .efficiency {
+            margin-top: 50px;
+            color: $white-text;
+            font-size: 12px;
+        }
+        .input {
+            width:140px;
+            height:37px;
+            background-color: $background-color;
+            border: 1px solid rgba(240, 240, 240, 0.424);
+            border-radius:5%;
+            color: $white-text;
+            padding: 8px;
+          }
+    }
+}
+.sign_up_button {
+    width: 120px;
+    height: 37px;
+    border: 1px solid $white-text;
+    background-color: $tab-background-color;
+    border-radius:4%;
+    color:white;
+    font-size:14px;
+    cursor:pointer;
+    margin:30px 0 0 20px;
+
+  }
+ .active-sign {
+        background-color: $active-button-background;
+  }
+
+ .page-filter-buttons {
+     margin:20px 20px;
+     form {
+         label {
+             margin-right: 10px;
+         }
+     }
+     .page-number {
+         margin-left: 10px;
+     }
+     .previous {
+         color: $white-text;
+         margin-left: 10px;
+     }
+ } 
